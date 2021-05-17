@@ -1,0 +1,94 @@
+html {
+    margin: 0;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(255, 0, 0));
+    background-repeat: no-repeat;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+  }
+
+  a,
+  button {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .dropdown {
+    height: 10vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .Inloggen,
+  .over-ons {
+    position: relative;
+  }
+  
+  .Inloggen ul,
+  .over-ons ul {
+    margin-top: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background: white;
+    left: 0px;
+    list-style: none;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+  }
+  .Inloggen li,
+  .over-ons li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Inloggen li:hover,
+  .over-ons li:hover {
+    background-color: rgb(248, 162, 162);
+  }
+  
+  .Inloggen a,
+  .over-ons a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .dropdown button,
+  .home {
+    background: none;
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .Inloggen button:focus + ul,
+  .over-ons button:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+  }
+  
+  
