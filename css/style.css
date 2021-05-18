@@ -66,6 +66,7 @@ html {
   .Inloggen li:hover,
   .over-ons li:hover {
     background-color: rgb(248, 162, 162);
+    border-radius: 5px;
   }
   
   .Inloggen a,
