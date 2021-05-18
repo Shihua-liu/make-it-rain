@@ -102,5 +102,14 @@ html {
     pointer-events: all;
     transform: translateY(0px);
   }
-  
+  .videos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 80px;
+  }
+  video{
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: center;
+  }
   
