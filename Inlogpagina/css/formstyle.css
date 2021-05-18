@@ -1,21 +1,35 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.titelCon {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.titel{
+  font-size: 300%;
+}
+
+html {
+  margin: 0;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(255, 0, 0));
+  background-repeat: no-repeat;
+  
 }
 
 body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: linear-gradient(
-        to right top,
-         #5ef7db,
-         #6cdbeb);
-  background-repeat: no-repeat;
 }
 
 .signupSection {
-  background: url(https://source.unsplash.com/TV2gg2kZD1o/1600x800);
+  /* background: url(https://source.unsplash.com/TV2gg2kZD1o/1600x800); */
+  background-color: black;
   background-repeat: no-repeat;
   position: absolute;
   top: 50%;
@@ -51,8 +65,9 @@ body {
 .signupForm {
   width: 70%;
   padding: 30px 0;
-  background: rgba(20, 40, 40, .8);
+  background: rgba(40, 21, 20, 0.85);
   transition: .2s;
+  height: 86.7%;
   /* h2 {
     font-weight: 300;
   } */
@@ -63,7 +78,7 @@ body {
   font-size: 16px;
   padding: 10px;
   width: 250px;
-  border: 1px solid rgba(10, 180, 180, 1);
+  border: 1px solid rgb(159, 5, 5);
   border-top: none;
   border-left: none;
   border-right: none;
@@ -78,7 +93,7 @@ body {
 }
 
 #join-btn {
-  border: 1px solid rgba(10, 180, 180, 1);
+  border: 1px solid rgb(159, 5, 5);
   background: rgba(20, 20, 20, .6);
   font-size: 18px;
   color: white;
