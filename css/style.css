@@ -2,8 +2,7 @@ html {
     margin: 0;
     height: 100%;
     min-height: 100%;
-    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(255, 0, 0));
-    /* background-repeat: round; */
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(255, 0, 0)) fixed;
 }
 
 * {
