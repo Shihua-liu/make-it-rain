@@ -1,4 +1,4 @@
-const names = ["Pewdiepie", "Pestily", "Munienio", "Sheeeesh", "KSI", "Jake Paul"];
+const names = ["Pewdiepie", "Pestily", "Munienio", "Sheeeesh", "KSI", "Logan Paul"];
 
     function channelNames() {
         for (let counter = 0; counter < 6; counter++) {
