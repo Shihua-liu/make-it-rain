@@ -1,4 +1,6 @@
 const names = ["Pewdiepie", "Pestily", "Munienio", "Sheeeesh", "KSI", "Logan Paul"];
+const views = ["12K", "1 mln", "50 mln", "5K", "100K", "20K", "238", "914"];
+const date = ["1 week ago", "20 minutes ago", "1 hour ago", "36 minutes ago", "5 days ago", "1 month ago"];
 
     function channelNames() {
         for (let counter = 0; counter < 6; counter++) {
