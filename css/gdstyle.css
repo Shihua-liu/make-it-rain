@@ -55,6 +55,11 @@ a{
     flex-direction: column;
 }
 
+.discord, .github{
+    width: 100px;
+    height: 100px;
+}
+
 img{
     margin: 15px;
 }
