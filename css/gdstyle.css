@@ -2,34 +2,96 @@ body{
     color: white;
 }
 
-.links{
-    text-align: center;
-}
-
-.alle_links{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-}
-.goeddoel{
-    background-color: rgba(20, 20, 20, .8);
-    justify-content: center;
-    margin: 60px 60px 20px 60px;
-    border-radius: 15px;
-}
+/* Over ons sectie */
 
 a{
     color: white;
 }
 
+.links{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "Pawel Thies Shi-Hua"
+                         "onsP  onsT  onsS   "; 
+}
+
+
+.over_ons,.over_onsP,.over_onsT,.over_onsS{
+    background-color: rgba(20, 20, 20, .2);
+    /* display: flex;
+    justify-content: center; */
+    margin: 20px 60px 60px;
+    border-radius: 15px;
+    padding: 35px;
+    /* flex-wrap: wrap; */
+}
+
+.over_onsP{
+    grid-area: onsP;
+}
+.over_onsT{
+    grid-area: onsT;
+}
+.over_onsS{
+    grid-area: onsS;
+}
+
+
+.over_ons2{
+    background-color: rgba(20, 20, 20, .2);
+    margin: 20px 60px 10px 60px;
+    border-radius: 15px;
+    padding: 35px;
+    text-align: center;
+}
+
+h2 {
+    padding: 10px;
+}
+
+.Pawel,.Thies,.Shi-Hua{
+    justify-content: center;
+    margin: 60px 60px 20px 60px;
+    border-radius: 15px;
+}
+
+.Pawel{
+    grid-area: Pawel;
+}
+
+.Thies{
+    grid-area: Thies;
+}
+
+.Shi-Hua{
+    grid-area: Shi-Hua;
+}
+
+/* 
 .alle_info{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
 }
 
+.wij{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+} */
+ 
+/* Goed doel sectie */
+.goeddoel{
+    background-color: rgba(20, 20, 20, .2);
+    justify-content: center;
+    margin: 60px 60px 20px 60px;
+    border-radius: 15px;
+}
+
 .over_goeddoel{
-    background-color: rgba(20, 20, 20, .8);
+    background-color: rgba(20, 20, 20, .2);
     display: flex;
     justify-content: center;
     margin: 20px 60px 60px 60px;
@@ -37,16 +99,13 @@ a{
     padding: 35px;
     flex-wrap: wrap;
 }
-.over_ons2{
-    background-color: rgba(20, 20, 20, .8);
-    /* display: flex;
-    justify-content: center;
-    justify-items: center; */
-    margin: 20px 60px 10px 60px;
-    border-radius: 15px;
-    padding: 35px;
+
+.linksgd{
     text-align: center;
 }
+
+
+/* Contact sectie */
 
 .contact-lijst{
     display: flex;
@@ -64,51 +123,72 @@ img{
     height: 80px;
 }
 
-h2 {
-    padding: 10px;
-}
-
-.over_ons{
-    background-color: rgba(20, 20, 20, .8);
-    display: flex;
-    justify-content: center;
-    margin: 20px 60px 60px;
-    border-radius: 15px;
-    padding: 35px;
-    flex-wrap: wrap;
-}
-
-.wij{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
- 
-}
-
-.namen{
-    background-color: rgba(20, 20, 20, .8);
-    justify-content: center;
-    margin: 60px 60px 20px 60px;
-    border-radius: 15px;
-}
-
-
 
 @media screen and (max-width: 872px){
     body{
         color: white;
     }
+    a{
+        color: white;
 
+    }
     .links{
         text-align: center;
     }
-    
-    .alle_links{
+
+    .alle_info{
+            display: grid;
+            grid-template-columns: 1fr;
+        
+    }
+
+    /* .alle_links{
         display: grid;
         grid-template-columns: 1fr;
     
+    } */
+
+    /* Over ons sectie */
+
+    .over_ons{
+        background-color: rgba(20, 20, 20, .2);
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
+        padding: 35px;
+        flex-wrap: wrap;
     }
+
+    .over_ons2{
+            background-color: rgba(20, 20, 20, .2);
+            margin: 20px;
+            border-radius: 15px;
+            padding: 35px;
+            text-align: center;
+        }
+
+    
+    .Pawel,.Thies,.Shi-Hua{
+        justify-content: center;
+        border-radius: 15px;
+    }
+
+    h2 {
+        padding: 10px;
+    }
+    
+    
+    
+    .wij{
+        display: grid;
+        grid-template-columns: 1fr;
+     
+    }
+        
+
+    /* Goed doel sectie */
     .goeddoel{
-        background-color: rgba(20, 20, 20, .8);
+        background-color: rgba(20, 20, 20, .2);
         justify-content: center;
         margin: 40px;
         border-radius: 15px;
@@ -116,18 +196,9 @@ h2 {
 
     
     
-    a{
-        color: white;
-    }
-    
-    .alle_info{
-        display: grid;
-        grid-template-columns: 1fr;
-    
-    }
     
     .over_goeddoel{
-        background-color: rgba(20, 20, 20, .8);
+        background-color: rgba(20, 20, 20, .2);
         display: flex;
         justify-content: center;
         margin: 40px;
@@ -135,17 +206,9 @@ h2 {
         padding: 35px;
         flex-wrap: wrap;
     }
-    .over_ons2{
-        background-color: rgba(20, 20, 20, .8);
-        /* display: flex;
-        justify-content: center;
-        justify-items: center; */
-        margin: 20px;
-        border-radius: 15px;
-        padding: 35px;
-        text-align: center;
-    }
     
+    /* Contact sectie */
+
     .contact-lijst{
         display: flex;
         align-items: center;
@@ -157,29 +220,5 @@ h2 {
         margin: 15px;
     }
     
-    h2 {
-        padding: 10px;
-    }
-    
-    .over_ons{
-        background-color: rgba(20, 20, 20, .8);
-        display: flex;
-        justify-content: center;
-        border-radius: 15px;
-        padding: 35px;
-        flex-wrap: wrap;
-    }
-    
-    .wij{
-        display: grid;
-        grid-template-columns: 1fr;
-     
-    }
-    
-    .namen{
-        background-color: rgba(20, 20, 20, .8);
-        justify-content: center;
-        border-radius: 15px;
-    }
     
 }
