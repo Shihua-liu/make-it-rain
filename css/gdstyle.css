@@ -11,10 +11,8 @@ a{
 .links{
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "Pawel Thies Shi-Hua"
-                         "onsP  onsT  onsS   "; 
+
+
 }
 
 
@@ -69,18 +67,16 @@ h2 {
     grid-area: Shi-Hua;
 }
 
-/* 
+
 .alle_info{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
+    grid-template-rows: 0.1fr 1fr;     
+    grid-template-areas: "Pawel Thies Shi-Hua"
+                         "onsP  onsT  onsS   "; 
 }
 
-.wij{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 
-} */
  
 /* Goed doel sectie */
 .goeddoel{
@@ -137,16 +133,16 @@ img{
     }
 
     .alle_info{
-            display: grid;
-            grid-template-columns: 1fr;
-        
-    }
-
-    /* .alle_links{
         display: grid;
-        grid-template-columns: 1fr;
-    
-    } */
+        grid-template-columns: 1fr ;
+        grid-template-rows: 0.1fr 1fr;     
+        grid-template-areas: "Pawel"
+                             "onsP"
+                             "Thies"
+                             "onsT"
+                             "Shi-Hua"
+                             "onsS"; 
+    }
 
     /* Over ons sectie */
 
