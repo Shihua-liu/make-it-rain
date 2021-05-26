@@ -222,3 +222,30 @@ html {
     }
 
   }
+
+/* Feedback pagina */
+body{
+  font-family: "Poppins", sans-serif;
+ }
+ .hele-form{
+   text-align: center;
+ }
+ h3{
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 255, 34);
+  font-size: 20px;
+ }
+ 
+ .Input{
+  font-family: "Poppins", sans-serif;
+  border: 1px solid orange;
+  width: 300px;
+  font-size: 20px;
+ }
+ 
+ .Submit{
+  font-family: "Poppins", sans-serif;
+  border: 1px solid orange;
+  width: 300px;
+  font-size: 20px;
+ }
