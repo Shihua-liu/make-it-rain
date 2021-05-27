@@ -96,6 +96,10 @@ h2 {
     flex-wrap: wrap;
 }
 
+#rood-kruis{
+    margin-top: -20px;
+}
+
 .linksgd{
     text-align: center;
 }
