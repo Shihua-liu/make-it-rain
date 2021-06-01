@@ -2,7 +2,7 @@ html {
     margin: 0;
     height: 100%;
     min-height: 100%;
-    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(255, 0, 0)) fixed;
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(255, 255, 255)) fixed;
 }
 
 * {
@@ -249,3 +249,22 @@ body{
   width: 300px;
   font-size: 20px;
  }
+
+
+/* Style van de videos */
+
+ .video-titel, .form{
+  display: flex;
+  justify-content: center;
+}
+
+video{
+  width: 400px;
+  height: 350px;
+}
+
+.alb{
+  /* position: relative; */
+  display: flex;
+  
+}
