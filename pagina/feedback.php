@@ -70,6 +70,8 @@
         echo "<br><br>Comments:<hr>".fread($read, 1024);
         fclose($read);
 
+        
+
     ?>
     </form>
 </body>
