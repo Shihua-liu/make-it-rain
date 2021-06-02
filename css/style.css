@@ -249,3 +249,22 @@ body{
   width: 300px;
   font-size: 20px;
  }
+
+
+/* Style van de videos */
+
+ .video-titel, .form{
+  display: flex;
+  justify-content: center;
+}
+
+video{
+  width: 400px;
+  height: 350px;
+}
+
+.alb{
+  /* position: relative; */
+  display: flex;
+  
+}
