@@ -1,0 +1,27 @@
+.video-titel,.form{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    font-size: xx-large;
+}
+
+video{
+    width: 400px;
+    height: 350px;
+}
+
+.alb{
+    /* position: relative; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+a:hover{
+    text-decoration: underline;
+}
+
+input{
+    font-size: large;
+}
