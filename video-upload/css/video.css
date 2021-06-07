@@ -1,27 +1,44 @@
+body{
+    text-align: center;
+}
+
 .video-titel,.form{
-    display: flex;
-    justify-content: center;
     text-decoration: none;
     color: rgb(255, 0, 0);
     font-size: xx-large;
 }
+.form{
+    text-decoration: none;
+}
 
+.full-form{
+    display: inline-block;
+    margin-top: 80px;
+
+}
+
+.video-titel:hover{
+    text-decoration: underline;
+}
+
+.uploaden:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+input{
+    font-size: large;
+}
+
+
+/* Video styles */
 video{
     width: 400px;
     height: 350px;
 }
 
 .alb{
-    /* position: relative; */
     display: flex;
     justify-content: space-evenly;
-}
-
-
-a:hover{
-    text-decoration: underline;
-}
-
-input{
-    font-size: large;
 }

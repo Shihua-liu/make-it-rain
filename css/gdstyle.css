@@ -1,5 +1,6 @@
 body{
     color: white;
+    height: auto;
 }
 
 /* Over ons sectie */
@@ -194,9 +195,6 @@ img{
         border-radius: 15px;
     }
 
-    
-    
-    
     .over_goeddoel{
         background-color: rgba(20, 20, 20, .2);
         display: flex;

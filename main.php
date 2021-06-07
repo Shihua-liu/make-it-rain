@@ -21,7 +21,7 @@
                 <button class="button12">Algemeen</button>
                 <ul>
                     <li><a href="Inlogpagina/signup.html">Inloggen</a></li>
-                    <li><a href="video-upload/index.php">Premium</a></li>
+                    <li><a href="video-upload/index.php">Uploaden</a></li>
                     <li><a href="pagina/goed_doel.html">Goed doel</a></li>
                 </ul>
             </div>
@@ -36,7 +36,6 @@
         </div>
     </nav>
 
-    <a href="video-upload/index.php" class="video-titel">Uploaden</a>
 
 	<div class="alb">
 

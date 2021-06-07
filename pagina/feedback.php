@@ -13,12 +13,12 @@
         <nav>
         <h2 id="titel"><strong>Clip_n_Dip</strong></h2>
             <div class="dropdown">
-                <button class="button12"><a href="../main.html" class="home">Home</a></button>
+                <button class="button12"><a href="../main.php" class="home">Home</a></button>
                 <div class="Algemeen">
                     <button class="button12">Algemeen</button>
                     <ul>
                         <li><a href="../Inlogpagina/signup.html">Inloggen</a></li>
-                        <li><a href="#">Premium</a></li>
+                        <li><a href="../video-upload/index.php">Uploaden</a></li>
                         <li><button><a href="goed_doel.html">Goed doel</a></button></li>
                     </ul>
                 </div>

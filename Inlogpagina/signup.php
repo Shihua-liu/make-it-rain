@@ -1,7 +1,8 @@
 <html>
     <head>
         <title>Hier kunt u zich aanmelden</title>
-        <link rel="stylesheet" href="../css/Style.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="css/formstyle.css">
     </head>
 <body>
     <?php
@@ -14,7 +15,7 @@
 
     if($password1 !== $password2)
     {
-        echo "De wachtwoorden komen niet overeen. Klik <a href='signup.html'>hier</a> om terug te gaan";
+        echo "<div class='tekst'>De wachtwoorden komen niet overeen. Klik <a href='signup.html' class='kop1'>hier</a> om terug te gaan</div>";
         exit();
     }
 
@@ -34,7 +35,7 @@
         $hash = password_hash($password1, PASSWORD_DEFAULT);
         $sql = "INSERT INTO users (id, username, password, voornaam, achternaam, email) VALUES (NULL, '$username', '$hash', '$voornaam', '$achternaam', '$email')";
         $result = $mysqli -> query($sql);
-        echo "Je hebt succesvol een account aangemaakt, ga naar <a href='form.html'>de loginpagina</a> om je aan te melden";
+        echo "<div class='tekst'>Je hebt succesvol een account aangemaakt, ga naar <a href='form.html' class= 'kop1'>de loginpagina</a> om je aan te melden</div>";
     } 
     
     ?>
