@@ -22,14 +22,14 @@
                     <ul>
                         <li><a href="../Inlogpagina/signup.html">Inloggen</a></li>
                         <li><a href="../video-upload/index.php">Uploaden</a></li>
-                        <li><button><a href="goed_doel.html">Goed doel</a></button></li>
+                        <li><button><a href="../pagina/goed_doel.html">Goed doel</a></button></li>
                     </ul>
                 </div>
                 <div class="Informatie">
                     <button class="button12">Informatie</button>
                     <ul>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="over_ons.html">Over ons</a></li>
+                        <li><a href="../pagina/contact.html">Contact</a></li>
+                        <li><a href="../pagina/over_ons.html">Over ons</a></li>
                         <li><a href="#">Feedback</a></li>
                     </ul>
                 </div>
