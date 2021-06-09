@@ -177,3 +177,72 @@ video{
   display: flex;
   
 }
+@media screen and (max-width: 415px) {
+  .Algemeen ul,
+  .Informatie ul {
+    margin-left: -47px;
+  }
+
+  .dropdown {
+    height: 10vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  form{
+    margin-top: 43%;
+  }
+  
+}
+
+/* Feedback pagina */
+body{
+font-family: "Poppins", sans-serif;
+}
+.hele-form{
+ text-align: center;
+}
+h3{
+font-family: "Poppins", sans-serif;
+color: rgb(0, 255, 34);
+font-size: 20px;
+}
+
+.Input{
+font-family: "Poppins", sans-serif;
+border: 1px solid orange;
+width: 300px;
+font-size: 20px;
+}
+
+.Submit{
+font-family: "Poppins", sans-serif;
+border: 1px solid orange;
+width: 300px;
+font-size: 20px;
+}
+
+
+/* Style van de videos */
+
+.video-titel, .form{
+display: flex;
+justify-content: center;
+}
+
+video{
+width: 400px;
+height: 350px;
+}
+
+.alb{
+/* position: relative; */
+display: flex;
+
+}

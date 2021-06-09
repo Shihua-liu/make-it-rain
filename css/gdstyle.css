@@ -219,4 +219,119 @@ img{
     }
     
     
+}@media screen and (max-width: 415px) {
+    body{
+        color: white;
+    }
+    a{
+        color: white;
+
+    }
+    .links{
+        text-align: center;
+    }
+
+    
+
+    .alle_info{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 0.1fr 1fr;     
+        grid-template-areas: "Pawel"
+                             "onsP"
+                             "Thies"
+                             "onsT"
+                             "Shi-Hua"
+                             "onsS"; 
+    }
+
+    /* Over ons sectie */
+
+    .over_ons{
+        background-color: rgba(20, 20, 20, .2);
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
+        padding: 35px;
+        flex-wrap: wrap;
+    }
+
+    .over_ons2{
+            background-color: rgba(20, 20, 20, .2);
+            margin: 20px;
+            border-radius: 15px;
+            padding: 35px;
+            text-align: center;
+            margin-top: 43%;
+            
+        }
+    .over_onsmediaQ{
+        margin-top: 43%;
+    }
+
+    
+    .Pawel,.Thies,.Shi-Hua{
+        justify-content: center;
+        border-radius: 15px;
+    }
+
+    h2 {
+        padding: 10px;
+    }
+    
+    
+    
+    .wij{
+        display: grid;
+        grid-template-columns: 1fr;
+     
+    }
+
+    .over_ons,.over_onsP,.over_onsT,.over_onsS{
+        background-color: rgba(20, 20, 20, .2);
+        /* display: flex;
+        justify-content: center; */
+        margin: 20px 24px 60px;
+        border-radius: 15px;
+        padding: 35px;
+        /* flex-wrap: wrap; */
+    }
+        
+
+    /* Goed doel sectie */
+    .goeddoel{
+        background-color: rgba(20, 20, 20, .2);
+        justify-content: center;
+        margin: 40px;
+        border-radius: 15px;
+    }
+
+    .over_goeddoel{
+        background-color: rgba(20, 20, 20, .2);
+        display: flex;
+        justify-content: center;
+        margin: 16px;
+        border-radius: 15px;
+        padding: 35px;
+        flex-wrap: wrap;
+    }
+
+    .linksgd{
+        margin-top: 43%;
+    }
+    
+    /* Contact sectie */
+
+    .contact-lijst{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    img{
+        margin: 15px;
+    }
+    
+    
 }
