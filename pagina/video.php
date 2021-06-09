@@ -1,3 +1,13 @@
+<?php 
+		 include "../video-upload/db_conn.php";
+         $id = $_GET["id"];
+		 $sql = "SELECT * FROM videos WHERE id = ".$id;
+		 $res = mysqli_query($conn, $sql);
+
+		 if (mysqli_num_rows($res) > 0) {
+		 	$video = mysqli_fetch_assoc($res);
+         }
+		 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +44,7 @@
         </nav>
     <div class="videoContainer">
         <div class="video">
-            <img class="thumbnail-image" src="http://unsplash.it/800/500?gravity=center&random=1" alt="">
+        <video src="../video-upload/uploads/<?=$video['video_url']?>" controls ></video>
         </div>
         <div class="videoTitleDetails">
             <div class="videoTitel">

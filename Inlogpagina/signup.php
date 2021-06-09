@@ -18,10 +18,10 @@
         exit();
     }
 
-    $host = "localhost";
-    $user = "root";
-    $pass = "";
-    $db = "flex";
+    $host = "127.0.0.1";
+    $user = "c5838pawel";
+    $pass = "root";
+    $db = "c5838flex";
 
     $mysqli = new mysqli($host,$user,$pass,$db);
     if ($mysqli -> connect_errno)
