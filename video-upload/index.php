@@ -35,13 +35,35 @@
                 </div>
             </div>
         </nav>
+
 <div class="full-form">
-    <a href="../main.php" class="video-titel">Videos</a>
-    
-    <form action="upload.php"method="post" enctype="multipart/form-data" class="form">
-        <input type="file"   name="my_video">
-        <input type="submit" name="submit" value="upload" class="uploaden">
+    <h2 href="../main.php" class="Upload-titel">Uploaden</h2><br>
+        <ul class="upload-form">
+            <li>
+                <label for="username"></label>
+                <input type="text" class="titel" name="Titel" placeholder="Titel" value="" oninput="return userNameValidation(this.value)" required/>
+            </li><br>
+            <li>
+                <label for="beschrijving"></label>
+                <input type="text" class="beschrijving" name="beschrijving" placeholder="Beschrijving" autocomplete="off" value="" oninput="return userNameValidation(this.value)" required/>
+            </li>
+            
+            <li id="center-btn">
+                <input type="submit" id="upload-btn" name="join" alt="Join" value="Uploaden"><br>
+            </li>
+        </ul>
     </form>
-</div>
+</div>    
+
+    <h2 class="Upload-titel2">Thumbnail</h2>
+    <form action="" method="post" enctype="multipart/form-data" class="form2">
+        <input type="file"   name="my_photo" class="form2">
+        <input type="submit" name="submit" value="upload" class="photo-upload">
+    </form>
+    <h2 class="Upload-titel2">Video</h2>
+    <form action="" method="post" enctype="multipart/form-data" class="form3">
+        <input type="file"   name="my_video" class="form3">
+        <input type="submit" name="submit" value="upload" class="video-upload">
+    </form>
 </body>
 </html>

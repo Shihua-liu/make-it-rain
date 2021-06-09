@@ -42,3 +42,129 @@ video{
     display: flex;
     justify-content: space-evenly;
 }
+
+
+/* upload sectie style  */
+li{
+    list-style: none;
+}
+.full-form{
+    width: 500px;
+}
+.Upload-titel{
+    text-decoration: none;
+    font-size: xx-large;
+    color: white;
+}
+.Upload-titel2{
+    text-decoration: none;
+    font-size: xx-large;
+    color: white;
+    margin-top: 30px;
+}
+
+
+.titel {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 0px 12px 10px;
+    transition: all 0.6s ease-in-out;
+  }
+  
+.titel:focus {
+    width: 50%;
+}
+
+.beschrijving {
+    width: 250px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 0px 12px 10px;
+    transition: all 0.6s ease-in-out;
+  }
+  
+.beschrijving:focus{
+    width: 80%;
+    height: 150px;
+}
+
+#upload-btn {
+    background-color: #00ff0d;
+    border: 2px solid black;
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 30px 2px;
+    cursor: pointer;
+    opacity: 0.6;
+    border-radius: 12px;
+    box-shadow: 0 6px rgb(54, 54, 54);
+}
+
+#upload-btn:hover{
+    opacity: 1;
+    color: black;
+}
+
+#upload-btn:active{
+    box-shadow: 0 3px rgb(0, 0, 0);
+    transform: translateY(4px);
+} 
+
+.form2{
+    margin: 20px 0px 0px 0px;
+}
+.form3{
+    margin: 20px 0px 0px 0px;
+}
+
+@media screen and (max-width: 412px){
+    .full-form{
+        width: 205px;
+        height: 205px;
+        margin-top: 40px;
+    }
+    .Upload-titel,.Upload-titel2 {
+        font-size: x-large;
+    }
+    .beschrijving {
+        width: 150px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        padding: 12px 0px 12px 10px;
+        transition: all 0.6s ease-in-out;
+      }
+
+      .beschrijving:focus{
+        width: 90%;
+        height: 120px;
+    }
+
+      .titel {
+        width: 70px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        padding: 12px 0px 12px 10px;
+        transition: all 0.6s ease-in-out;
+      }
+      .titel:focus {
+        width: 70%;
+    }
+
+    .form2,.form3{
+        font-size: medium;
+    }
+}
