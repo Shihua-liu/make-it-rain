@@ -125,3 +125,17 @@ body {
   } */
 }
 
+.kop1{
+  color: rgb(255, 0, 0);
+}
+
+.kop1:hover{
+  color: rgb(21, 255, 0);
+}
+
+.tekst{
+  margin-top: 80px;
+  text-align: center;
+  color: white;
+  font-size: x-large;
+}

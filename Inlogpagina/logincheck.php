@@ -2,7 +2,8 @@
 <?php 
 session_start();
 ?>
-    <link rel="stylesheet" href="../css/Style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/formstyle.css">
 </HEAD>
 <BODY>   
 
@@ -39,9 +40,9 @@ session_start();
     
     if($wachtwoord_juist == TRUE)
     {
-       echo "Je bent ingelogd<hr>";
+       echo "Je bent ingelogd<br>";
        $_SESSION['username'] = $gebruikersnaam;
-       echo "Klik <a href ='../main.html'>hier</a> om naar de volgende beveiligde site te gaan";       
+       echo "<div class='tekst'> Klik <a href ='../main.php' class='kop1'>hier</a> om naar de volgende beveiligde site te gaan</div>";       
     }
     else
     {
