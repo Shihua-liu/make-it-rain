@@ -1,5 +1,5 @@
 body{
-    /* text-align: center; */
+    text-align: center;
 }
 
 .video-titel,.form{
@@ -166,6 +166,12 @@ li{
 
     .form2,.form3{
         font-size: medium;
+        
+    }
+
+    .full-upload{
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -174,10 +180,10 @@ li{
         margin-top: 20px;
         
     }
-    .form2flex, .form3flex{
+
+    .full-upload{
         display: flex;
+        align-content: space-between;
         justify-content: space-around;
     }
-    
-    
 }
