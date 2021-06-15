@@ -36,7 +36,7 @@
             </div>
         </nav>
 
-<div class="full-form">
+<div class="full-form" style="width: auto;">
     <h2 href="../main.php" class="Upload-titel">Uploaden</h2><br>
         <ul class="upload-form">
             <li>
@@ -45,29 +45,27 @@
             </li><br>
             <li>
                 <label for="beschrijving"></label>
-                <input type="text" class="beschrijving" name="beschrijving" placeholder="Beschrijving" autocomplete="off" value="" oninput="return userNameValidation(this.value)" required/>
-            </li>
-            
-            <li id="center-btn">
-                <input type="submit" id="upload-btn" name="join" alt="Join" value="Uploaden"><br>
+                <textarea name="beschrijving"  placeholder="Beschrijving" autocomplete="off" id="" cols="30" rows="10"></textarea>
             </li>
         </ul>
-    </form>
-  
 
-    <div class="full-upload">
+    <div class="full-upload" style="width: auto;">
+
         <div class="form2flex">
             <h2 class="Upload-titel2">Thumbnail</h2>    
                 <form action="" method="post" enctype="multipart/form-data" class="form2">
                     <input type="file"   name="my_photo" class="form2">
-                    <input type="submit" name="submit" value="upload" class="form2">
+                    <!-- <input type="submit" name="submit" value="upload" class="form2"> -->
                 </form>
         </div>
+
         <div class="form3flex">
             <h2 class="Upload-titel2">Video</h2>
-            <form action="" method="post" enctype="multipart/form-data" class="form3">
+            <form action="upload.php" method="post" enctype="multipart/form-data" class="form3">
                 <input type="file"   name="my_video" class="form3">
-                <input type="submit" name="submit" value="upload" class="form3">
+                <li id="center-btn">
+                    <input type="submit" name="submit" value="upload" class="form3"id="upload-btn"><br>
+                </li>
             </form>
         </div>
     </div>

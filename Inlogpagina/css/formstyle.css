@@ -139,3 +139,9 @@ body {
   color: white;
   font-size: x-large;
 }
+
+@media screen and (max-width: 1555px){
+  #titel{
+    display: none;
+  }
+}

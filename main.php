@@ -47,8 +47,8 @@
 		 if (mysqli_num_rows($res) > 0) {
 		 	while ($video = mysqli_fetch_assoc($res)) { 
 		 ?>	
-	        <video src="video-upload/uploads/<?=$video['video_url']?>" controls ></video>
-            <a href="pagina/video.php?id=<?=$video['id']?>">deze video</a>
+	        <!-- <video src="video-upload/uploads/<?=$video['video_url']?>" controls ></video> -->
+            <a href="pagina/video.php?id=<?=$video['id']?>" id="videoHref">Test video</a>
 	    <?php 
 	     }
 		 }else {

@@ -246,3 +246,7 @@ height: 350px;
 display: flex;
 
 }
+
+#videoHref{
+  color: white;
+}

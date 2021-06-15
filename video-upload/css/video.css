@@ -49,7 +49,7 @@ li{
     list-style: none;
 }
 .full-form{
-    width: 1500px;
+    width: auto;
 }
 .Upload-titel{
     text-decoration: none;
@@ -76,24 +76,22 @@ li{
   }
   
 .titel:focus {
-    width: 50%;
+    width: 20%;
 }
 
 .beschrijving {
-    width: 250px;
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
+    background-color: #f8f8f8;
     font-size: 16px;
-    background-color: white;
-    padding: 12px 0px 12px 10px;
-    transition: all 0.6s ease-in-out;
+    resize: none;
   }
   
-.beschrijving:focus{
-    width: 80%;
-    height: 150px;
-}
+
 
 #upload-btn {
     background-color: #00ff0d;
@@ -145,11 +143,6 @@ li{
         transition: all 0.6s ease-in-out;
       }
 
-      .beschrijving:focus{
-        width: 90%;
-        height: 120px;
-    }
-
       .titel {
         width: 70px;
         box-sizing: border-box;
@@ -185,5 +178,44 @@ li{
         display: flex;
         align-content: space-between;
         justify-content: space-around;
+    }
+    .titel {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        padding: 12px 0px 12px 10px;
+        transition: all 0.6s ease-in-out;
+      }
+      
+    .titel:focus {
+        width: 40%;
+    }
+    
+    .beschrijving {
+        width: 250px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        padding: 12px 0px 12px 10px;
+        transition: all 0.6s ease-in-out;
+      }
+}
+
+@media screen and (max-width: 1000px){
+    .full-form{
+        margin-top: 20px;
+    }
+
+    .full-upload{
+        display: flex;
+        flex-direction: column;
+    }
+    .full-form{
+        width: 900px;
     }
 }
