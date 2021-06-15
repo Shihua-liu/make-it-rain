@@ -49,7 +49,7 @@ li{
     list-style: none;
 }
 .full-form{
-    width: 1500px;
+    width: auto;
 }
 .Upload-titel{
     text-decoration: none;
@@ -184,8 +184,11 @@ li{
     .full-upload{
         display: flex;
         align-content: space-between;
-        justify-content: space-around;
+        justify-content: space-between;
     }
+<<<<<<< HEAD
+}
+=======
     .titel {
         width: 130px;
         box-sizing: border-box;
@@ -233,3 +236,4 @@ li{
         width: 900px;
     }
 }
+>>>>>>> df4f3669ba4e3003da0b7795715aa3552f321809

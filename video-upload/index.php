@@ -63,7 +63,7 @@
                     <input type="submit" name="submit" value="upload" class="form2">
                 </form>
         </div>
-        <div class="form3flex">
+        <div class="form2flex">
             <h2 class="Upload-titel2">Video</h2>
             <form action="../main.php" method="post" enctype="multipart/form-data" class="form3">
                 <input type="file"   name="my_video" class="form3">
