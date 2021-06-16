@@ -2,7 +2,7 @@
 
     $sname = "localhost";
     $uname = "root";
-    $password = "root";
+    $password = "";
 
     $db_name = "video_db";
 

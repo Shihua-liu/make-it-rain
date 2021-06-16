@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="video-upload/css/video.css">
+    <!-- <link rel="stylesheet" href="video-upload/css/video.css"> -->
     <script src="js/script.js"></script>
 </head>
 <body>
@@ -37,8 +37,8 @@
     </nav>
 
 
-	<div class="alb">
-
+    <div class="videos">
+            <section class="video-section">
 		<?php 
 		 include "video-upload/db_conn.php";
 		 $sql = "SELECT * FROM videos ORDER BY id DESC";
@@ -47,38 +47,36 @@
 		 if (mysqli_num_rows($res) > 0) {
 		 	while ($video = mysqli_fetch_assoc($res)) { 
 		 ?>	
-	        <!-- <video src="video-upload/uploads/<?=$video['video_url']?>" controls ></video> -->
-            <a href="pagina/video.php?id=<?=$video['id']?>" id="videoHref">Test video</a>
+                <article class="video-container">
+                    <a href="pagina/video.php?id=<?php echo $video['id']?>" class="thumbnail" data-duration="12:24">
+                        <img class="thumbnail-image" src="video-upload/uploads/<?php echo $video['thumbnail']?>" alt="">
+                    </a>
+                    <div class="video-bottom-section">
+                        <a href="#">
+                            <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center&random=1" alt="">
+                        </a>
+                        <div class="video-details">
+                            <a href="pagina/video.php?id=<?php  echo $video['id']?>" class="video-title"><?php echo $video['titel']?></a>
+                            <a href="#" class="channel-name" id="channel"></a>
+                            <div class="video-metadata">
+                                <span class="views">12K views</span>
+                                •
+                                <span class="date">1 week ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            <!-- <video src="video-upload/uploads/" controls ></video> -->
+            <!-- <a href="pagina/video.php?id=" id="videoHref">Test video</a> -->
 	    <?php 
 	     }
 		 }else {
 		 	echo "<h1>LEEG</h1>";
 		 }
 		 ?>
-    </div>
+         </section>
+        </div>
     
-    <!-- <div class="videos">
-        <section class="video-section">
-            <article class="video-container">
-                <a href="#" class="thumbnail" data-duration="12:24">
-                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center&random=1" alt="">
-                </a>
-                <div class="video-bottom-section">
-                    <a href="#">
-                        <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center&random=1" alt="">
-                    </a>
-                    <div class="video-details">
-                        <a href="#" class="video-title">Titel</a>
-                        <a href="#" class="channel-name" id="channel"></a>
-                        <div class="video-metadata">
-                            <span class="views">12K views</span>
-                            •
-                            <span class="date">1 week ago</span>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-    </div> -->
+    
 </body>
 </html>

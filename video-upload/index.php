@@ -37,11 +37,12 @@
         </nav>
 
 <div class="full-form" style="width: auto;">
+<form action="upload.php" method="post" enctype="multipart/form-data" class="form3">
     <h2 href="../main.php" class="Upload-titel">Uploaden</h2><br>
         <ul class="upload-form">
             <li>
-                <label for="username"></label>
-                <input type="text" class="titel" name="Titel" placeholder="Titel" value="" oninput="return userNameValidation(this.value)" required/>
+                <label for="titel"></label>
+                <input type="text" class="titel" name="titel" placeholder="Titel" value="" oninput="return userNameValidation(this.value)" required/>
             </li><br>
             <li>
                 <label for="beschrijving"></label>
@@ -53,22 +54,21 @@
 
         <div class="form2flex">
             <h2 class="Upload-titel2">Thumbnail</h2>    
-                <form action="" method="post" enctype="multipart/form-data" class="form2">
                     <input type="file"   name="my_photo" class="form2">
                     <!-- <input type="submit" name="submit" value="upload" class="form2"> -->
-                </form>
         </div>
 
         <div class="form3flex">
             <h2 class="Upload-titel2">Video</h2>
-            <form action="upload.php" method="post" enctype="multipart/form-data" class="form3">
+            
                 <input type="file"   name="my_video" class="form3">
                 <li id="center-btn">
                     <input type="submit" name="submit" value="upload" class="form3"id="upload-btn"><br>
                 </li>
-            </form>
+            
         </div>
     </div>
+</form>    
 </div>  
 </body>
 </html>

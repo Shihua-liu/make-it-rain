@@ -49,7 +49,7 @@
         </div>
         <div class="videoTitleDetails">
             <div class="videoTitel">
-                OMG VIDEO
+                <?php echo $video['titel']?>
             </div>
         
             <div class="videoData">
@@ -68,19 +68,7 @@
             </div>
             </div>
             <div class="description">
-            aoff aosijdff oiao fbafmao oa fn<br>
-            aoff aosijdff oiao fbafmao oa fn<br>
-            aoff aosijdff oiao fbafmao oa fn<br>
-            aoff aosijdff oiao fbafmao oa fn<br>
-            aoff aosijdff oiao fbafmao oa fn<br>
-            aoff aosijdff oiao fbafmao oa fn<br>
-            aoff aosijdff oiao fbafmao oa fn<br>
-            aoff aosijdff oiao fbafmao oa fn<br>
-            aoff aosijdff oiao fbafmao oa fn<br>
-            aoff aosijdff oiao fbafmao oa fn<br>
-            aoff aosijdff oiao fbafmao oa fn<br>
-            aoff aosijdff oiao fbafmao oa fn<br>
-            aoff aosijdff oiao fbafmao oa fn<br>
+                <?php echo $video['bes']?>  
             </div>
         </div>
         </div>
