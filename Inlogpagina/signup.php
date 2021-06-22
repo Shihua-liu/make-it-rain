@@ -21,7 +21,7 @@
 
     $host = "127.0.0.1";
     $user = "c5838pawel";
-    $pass = "root";
+    $pass = "";
     $db = "c5838flex";
 
     $mysqli = new mysqli($host,$user,$pass,$db);

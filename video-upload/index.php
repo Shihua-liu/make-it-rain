@@ -65,7 +65,6 @@
                 <li id="center-btn">
                     <input type="submit" name="submit" value="upload" class="form3"id="upload-btn"><br>
                 </li>
-            
         </div>
     </div>
 </form>    
