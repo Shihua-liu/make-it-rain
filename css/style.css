@@ -322,3 +322,24 @@ font-size: 20px;
 .video-metadata {
   color: white;
 }
+
+/* Niet ingelogd css */
+
+.uitlog {
+  color: white;
+  text-decoration: none;
+
+}
+
+.uitlog:hover {
+  color: rgb(109, 109, 109);
+}
+
+/* Ingelogd */
+
+.gebruiker {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  color: white;
+}

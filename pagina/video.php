@@ -18,25 +18,41 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/gdstyle.css">
     <link rel="stylesheet" href="../css/videoStyle.css">
+    <?php
+    session_start();
+
+    if(!isset($_SESSION['username']))
+    {
+        echo "Je bent niet ingelogd! Klik <a href='Inlogpagina/form.html'>hier<a> om in te loggen.";
+        exit();
+    }
+    ?>
 </head>
 <body>
     <h2 id="titel"><strong>Clip_n_Dip</strong></h2>
+    <div class="gebruiker">
+                <?php 
+                echo "Welkom ";
+                echo $_SESSION['username'] . "!"; 
+                ?>
+                <br><a class="uitlog" href="../Inlogpagina/loguit.php">Uitloggen</a>
+            </div>
     <nav class="nav">
             <div class="dropdown">
                 <button><a href="../main.php" class="home">Home</a></button>
                 <div class="Algemeen">
                     <button>Algemeen</button>
                     <ul>
-                        <li><a href="../Inlogpagina/signup.html">Inloggen</a></li>
+                        <li><a href="../Inlogpagina/signup.php">Inloggen</a></li>
                         <li><a href="../video-upload/index.php">Uploaden</a></li>
-                        <li><a href="goed_doel.html">Goed doel</a></li>
+                        <li><a href="goed_doel.php">Goed doel</a></li>
                     </ul>
                 </div>
                 <div class="Informatie">
                     <button>Informatie</button>
                     <ul>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="over_ons.html">Over ons</a></li>
+                        <li><a href="contact.php">Contact</a></li>
+                        <li><a href="over_ons.php">Over ons</a></li>
                         <li><a href="feedback.php">Feedback</a></li>
                     </ul>
                 </div>

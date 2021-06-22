@@ -10,9 +10,25 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="video-upload/css/video.css"> -->
     <script src="js/script.js"></script>
+    <?php
+    session_start();
+
+    if(!isset($_SESSION['username']))
+    {
+        echo "<h1 class='uitlog'>Je bent niet ingelogd! Klik <a href='Inlogpagina/form.html'>hier<a> om in te loggen.</h1>";
+        exit();
+    }
+    ?>
 </head>
 <body>
     <h2 id="titel"><strong>Clip_n_Dip</strong></h2>
+    <div class="gebruiker">
+                <?php 
+                echo "Welkom ";
+                echo $_SESSION['username'] . "!"; 
+                ?>
+                <br><a class="uitlog" href="Inlogpagina/loguit.php">Uitloggen</a>
+            </div>
     <nav class="nav">
     <!-- <label for="toggle">&#9776;</label> -->
         <div class="dropdown">
@@ -20,16 +36,16 @@
             <div class="Algemeen">
                 <button class="button12">Algemeen</button>
                 <ul>
-                    <li><a href="Inlogpagina/signup.html">Inloggen</a></li>
+                    <li><a href="Inlogpagina/signup.php">Inloggen</a></li>
                     <li><a href="video-upload/index.php">Uploaden</a></li>
-                    <li><a href="pagina/goed_doel.html">Goed doel</a></li>
+                    <li><a href="pagina/goed_doel.php">Goed doel</a></li>
                 </ul>
             </div>
             <div class="Informatie">
                 <button class="button12">Informatie</button>
                 <ul>
-                    <li><a href="pagina/contact.html">Contact</a></li>
-                    <li><a href="pagina/over_ons.html">Over ons</a></li>
+                    <li><a href="pagina/contact.php">Contact</a></li>
+                    <li><a href="pagina/over_ons.php">Over ons</a></li>
                     <li><a href="pagina/feedback.php">Feedback</a></li>  
                 </ul>
             </div>
