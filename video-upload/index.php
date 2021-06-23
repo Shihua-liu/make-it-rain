@@ -69,13 +69,15 @@
     <div class="full-upload" style="width: auto;">
 
         <div class="form2flex">
-            <h2 class="Upload-titel2">Thumbnail</h2>    
+            <h2 class="Upload-titel2">Thumbnail</h2>
+            <p class="Uploadinfo">Gebruik een 10/6 formaat (250x150px)</p>
                     <input type="file"   name="my_photo" class="form2">
                     <!-- <input type="submit" name="submit" value="upload" class="form2"> -->
         </div>
 
         <div class="form3flex">
             <h2 class="Upload-titel2">Video</h2>
+            <p class="Uploadinfo">Gebruik een korte clip (max 5 min)</p>
             
                 <input type="file"   name="my_video" class="form3">
                 <li id="center-btn">

@@ -360,3 +360,20 @@ font-size: 20px;
   color: white;
 }
 
+
+/* Thumbnail error */
+
+.thumbError {
+  position: absolute;
+  color: white;
+  border: black 1px solid;
+  top: 50%;
+  left: 40%;
+  right: 40%;
+}
+
+/* Upload formaat */
+
+.Uploadinfo {
+  color: white;
+}

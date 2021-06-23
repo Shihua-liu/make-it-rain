@@ -12,6 +12,8 @@
         $tmp_name2   = $_FILES ['my_photo'] ['tmp_name'];
         $error2      = $_FILES ['my_photo'] ['error'];
 
+        
+
         if ($error2 === 0){
             $photo_ex = pathinfo($photo_name, PATHINFO_EXTENSION);
             $photo_ex_lc = strtolower($photo_ex);
@@ -19,15 +21,53 @@
             
             if(in_array($photo_ex_lc, $allowed_exs2)){
                 
-                $new_photo_name = uniqid("photo-", true). '.'.$photo_ex_lc;
-                $photo_upload_path = 'uploads/'.$new_photo_name;
-                move_uploaded_file($tmp_name2,$photo_upload_path);
+                $image_info = getimagesize($tmp_name2);
+                $ratio = 10/6;
+
+                if (($image_info[0] / $image_info[1]) === $ratio){
+                    $new_photo_name = uniqid("photo-", true). '.'.$photo_ex_lc;
+                    $photo_upload_path = 'uploads/'.$new_photo_name;
+                    move_uploaded_file($tmp_name2,$photo_upload_path);
+                } else {
+                    $em = "Uw thumbnail zit niet in een goede verhouding. Gebruik 10/6";
+                    header("location: ../main.php?error=$em"); 
+                }
+
+                
                 
             }else{
                 $em = "U kunt dit bestand niet uploaden";
                 header("location: ../main.php?error=$em"); 
             }
         }
+
+        $thumb_upload_path = 'uploads/thumbs/'.$new_photo_name;
+
+        switch ($photo_ex) {
+            case "jpg":
+                $im_php = imagecreatefromjpeg($photo_upload_path);
+                $size = min(imagesx($im_php), imagesy($im_php));
+                // $im_php = imagecrop($im_php, ['x' => $size*0.4, 'y' => 0, 'width' => $size, 'height' => $size]);
+                $im_php = imagescale($im_php, 250);
+                imagejpeg($im_php,$thumb_upload_path);
+            break;
+            case "png":
+                $im_php = imagecreatefrompng($photo_upload_path);
+                $size = min(imagesx($im_php), imagesy($im_php));
+                // $im_php = imagecrop($im_php, ['x' => $size*0.4, 'y' => 0, 'width' => $size, 'height' => $size]);
+                $im_php = imagescale($im_php, 250);
+                imagepng($im_php,$thumb_upload_path);
+            break;
+            case "gif":
+                $im_php = imagecreatefromgif($photo_upload_path);
+                $size = min(imagesx($im_php), imagesy($im_php));
+                // $im_php = imagecrop($im_php, ['x' => $size*0.4, 'y' => 0, 'width' => $size, 'height' => $size]);
+                $im_php = imagescale($im_php, 250);
+                imagegif($im_php,$thumb_upload_path);
+            break;
+        }
+
+
 
         $video_name = $_FILES ['my_video'] ['name'];
         $tmp_name   = $_FILES ['my_video'] ['tmp_name'];

@@ -13,6 +13,17 @@
     <?php
     session_start();
 
+    $error = '';
+
+    if(isset($_GET['error']))
+    {
+        $error = $_GET['error'];
+    }
+    
+    function function_alert($message) {
+        echo "<script>alert('$message');</script>";
+    }
+
     if(!isset($_SESSION['username']))
     {
         echo "<h1 class='uitlog2'>Je bent niet ingelogd! Klik <a href='Inlogpagina/form.html' class='kop1'>hier<a> om in te loggen.</h1>";
@@ -20,6 +31,7 @@
     }
     ?>
 </head>
+
 <body>
     <h2 id="titel"><strong>Clip_n_Dip</strong></h2>
     <div class="gebruiker">
@@ -92,7 +104,12 @@
 		 ?>
          </section>
         </div>
-    
-    
+    <?php
+    if($error) {
+      function_alert($error);  
+    }
+
+
+    ?>
 </body>
 </html>
