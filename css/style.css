@@ -271,8 +271,8 @@ font-size: 20px;
 }
 
 .thumbnail-image {
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   min-width: 250px;
   min-height: 150px;
   background-color: #AAA;
@@ -335,6 +335,22 @@ font-size: 20px;
   color: rgb(109, 109, 109);
 }
 
+.uitlog2 {
+  color: white;
+  text-decoration: none;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.kop1{
+  color: rgb(255, 0, 0);
+}
+
+.kop1:hover{
+  color: rgb(21, 255, 0);
+}
+
+
 /* Ingelogd */
 
 .gebruiker {
@@ -343,3 +359,4 @@ font-size: 20px;
   top: 5%;
   color: white;
 }
+
