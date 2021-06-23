@@ -103,7 +103,6 @@ li{
     opacity: 0.6;
     border-radius: 12px;
     box-shadow: 0 6px rgb(54, 54, 54);
-    position: absolute;
     left: 45%;
     right: 50%;
     top: 80%;
@@ -238,10 +237,6 @@ li{
     .full-form{
         width: 900px;
     }
-    #upload-btn{
-        
-    }
-
 }
 
 
