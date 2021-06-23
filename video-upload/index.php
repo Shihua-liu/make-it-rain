@@ -76,13 +76,13 @@
 
         <div class="form3flex">
             <h2 class="Upload-titel2">Video</h2>
-            
-                <input type="file"   name="my_video" class="form3">
-                <li id="center-btn">
-                    <input type="submit" name="submit" value="upload" class="form3"id="upload-btn"><br>
-                </li>
         </div>
-    </div>
+        
+    </div> 
+    <input type="file"   name="my_video" class="form3">
+        <li id="center-btn">
+            <input type="submit" name="submit" value="upload" id="upload-btn"><br>
+        </li>
 </form>    
 </div>  
 </body>

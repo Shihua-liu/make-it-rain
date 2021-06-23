@@ -183,7 +183,7 @@ li{
         align-content: space-between;
         justify-content: space-between;
     }
-}
+
     .titel {
         width: 130px;
         box-sizing: border-box;
@@ -209,7 +209,7 @@ li{
         padding: 12px 0px 12px 10px;
         transition: all 0.6s ease-in-out;
       }
-
+}
 
 @media screen and (max-width: 1000px){
     .full-form{
@@ -222,7 +222,7 @@ li{
     
 }
 
-@media screen and (max-width: 1580px){
+@media screen and (max-width: 1530px){
     .full-form{
         margin-top: 20px;
     }
@@ -234,6 +234,10 @@ li{
     .full-form{
         width: 900px;
     }
+    #upload-btn{
+        
+    }
+
 }
 
 

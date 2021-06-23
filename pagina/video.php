@@ -58,6 +58,7 @@
                 </div>
             </div>
         </nav>
+
     <div class="videoContainer">
         <div class="video">
             <video src="../video-upload/uploads/<?=$video['video_url']?>" controls ></video>

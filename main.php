@@ -15,7 +15,7 @@
 
     if(!isset($_SESSION['username']))
     {
-        echo "<h1 class='uitlog'>Je bent niet ingelogd! Klik <a href='Inlogpagina/form.html'>hier<a> om in te loggen.</h1>";
+        echo "<h1 class='uitlog2'>Je bent niet ingelogd! Klik <a href='Inlogpagina/form.html' class='kop1'>hier<a> om in te loggen.</h1>";
         exit();
     }
     ?>
