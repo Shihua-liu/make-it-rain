@@ -67,14 +67,14 @@
         <div class="videoTitleDetails">
             <div class="videoTitel">
                 <?php echo $video['titel']?>
-            </div>
+            </div><br>
         
-            <div class="videoData">
+            <!-- <div class="videoData">
                 <span>12k views</span>
                 <span>•</span>
                 <span>10 weeks ago</span>
-            </div>
-        <div class="videoDetails">
+            </div> 
+         <div class="videoDetails">
             <div class="kanaalDetails">
                 <div class="logo">
                     <img class="kanaal" src="http://unsplash.it/36/36?gravity=center&random=2" alt="">
@@ -83,7 +83,7 @@
                 wazzap
                 <p>100k subs</p>
             </div>
-            </div>
+            </div> -->
             <div class="description">
                 <?php echo $video['bes']?>  
             </div>

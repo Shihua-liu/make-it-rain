@@ -76,21 +76,21 @@
 		 	while ($video = mysqli_fetch_assoc($res)) { 
 		 ?>	
                 <article class="video-container">
-                    <a href="pagina/video.php?id=<?php echo $video['id']?>" class="thumbnail" data-duration="12:24">
+                    <a href="pagina/video.php?id=<?php echo $video['id']?>" class="thumbnail">
                         <img class="thumbnail-image" src="video-upload/uploads/<?php echo $video['thumbnail']?>" alt="">
                     </a>
                     <div class="video-bottom-section">
-                        <a href="#">
+                        <!-- <a href="#">
                             <img class="channel-icon" src="http://unsplash.it/36/36?gravity=center&random=1" alt="">
-                        </a>
+                        </a> -->
                         <div class="video-details">
                             <a href="pagina/video.php?id=<?php  echo $video['id']?>" class="video-title"><?php echo $video['titel']?></a>
-                            <a href="#" class="channel-name" id="channel"></a>
-                            <div class="video-metadata">
+                            <!--<a href="#" class="channel-name" id="channel"></a>
+                             <div class="video-metadata">
                                 <span class="views">12K views</span>
                                 •
                                 <span class="date">1 week ago</span>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </article>
