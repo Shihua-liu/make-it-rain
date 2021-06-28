@@ -12,9 +12,9 @@ session_start();
     $wachtwoord = $_POST['pass'];
 
     $host = "127.0.0.1";
-    $user = "c5957shihua";
+    $user = "c5838pawel";
     $pass = "root";
-    $db = "c5957mir1";
+    $db = "c5838flex";
 
     $mysqli = new mysqli($host,$user,$pass,$db);
     if ($mysqli -> connect_errno)

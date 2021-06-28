@@ -77,7 +77,7 @@
 
         <div class="form3flex">
             <h2 class="Upload-titel2">Video</h2>
-            <p class="Uploadinfo">Gebruik een korte clip (max 5 min)</p>
+            <p class="Uploadinfo">Gebruik een korte clip (max 30 sec)</p>
             
                 <!-- <input type="file"   name="my_video" class="form3">
                 <li id="center-btn">
@@ -86,7 +86,7 @@
         </div>
 
     </div> 
-    <input type="file"   name="my_video" class="form3">
+    <input type="file"   name="my_video" class="form4">
         <li id="center-btn">
             <input type="submit" name="submit" value="upload" id="upload-btn"><br>
         </li>
